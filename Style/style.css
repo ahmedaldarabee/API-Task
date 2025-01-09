@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Tahoma , sans-serif;
+    background: linear-gradient(50deg, gray  , #0684a0 , #000);
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.col-dir{
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* to middle the container in page */
+.container {
+    padding-left:  15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+
+/* large screen */
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+.user-info {
+    border: 1px dashed black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffffce;
+    box-shadow: 5px 5px 10px white , -5px -5px 10px white;
+}
+
+.user-info .email {
+    margin: 20px;
+}
+
+.controllerBtn {
+    margin: 40px;
+    cursor: pointer;
+    background-color: white;
+    
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.controllerBtn:hover {
+    color: #0033ff;
+    transform: scale(1.1) rotate(20deg) ;
+    box-shadow: 0 0 5px #000;
+}
